@@ -24,6 +24,19 @@ public class PropertyTest
         assertEquals(price, property1.getPrice());
         
     }
+    @Test
+    public void testToString() {
+       
+        String description = "T3 Monte Belo";
+        double price = 150000.0;
+        Property property1 = new Property(description, price);
+
+        String result = property1.toString();
+
+        String expected = "Descrição : " + "T3 Monte Belo" +
+                "Preço    : " + 150000.0 + " Euros";
+        assertEquals(expected, result);
+    }
 
     /**
      * Define a 'fixture' do teste.
