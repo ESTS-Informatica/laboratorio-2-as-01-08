@@ -24,6 +24,10 @@ public class Company {
      * Constructor of class Company
      */
     public Company() {
+        clients = new ArrayList<>();
+        sellers = new ArrayList<>();
+        properties = new ArrayList<>();
+        sells = new ArrayList<>();
 
     }
 
@@ -122,7 +126,7 @@ public class Company {
      * @return The total number of sells in the year.
      */
     public int calculateSellsOfTheYear(int year) {
-        return 0;         // dummy implementation
+        return -1;         // dummy implementation
     }
 
     /**
